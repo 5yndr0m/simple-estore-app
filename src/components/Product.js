@@ -1,12 +1,12 @@
 import '../assets/CSS/layout.css';
 import { useState } from 'react';
 
-export default function Product({ flower}){
+export default function Product({ flower, addToCart }){
   const [quantity, setQuantity] = useState(0);
   
-  const addItem = (e) => {
-    const { name, value } = e.target.value;
-    
+  const handleAddItem = () => {
+    addToCart(flower, quantity);
+    setQuantity(0);
   }
   
     return(
@@ -27,7 +27,8 @@ export default function Product({ flower}){
                           onChange={(e) => setQuantity(e.target.value)} 
                         />
                     </div>
-                    <button className="card-button">Add to Cart</button>
+                    <button className="card-button"
+                      onClick={ handleAddItem }>Add to Cart</button>
                 </div>
             </div>
         </div>
