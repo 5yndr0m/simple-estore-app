@@ -21,10 +21,10 @@ export default function Cart({ cartItems }) {
                           {cartItem.name}
                         </td>
                         <td>
-                          {cartItem.qunt}
+                          {cartItem.quantity}
                         </td>
                         <td>
-                          {cartItem.price}
+                          {cartItem.totalPrice}
                         </td>
                         {() => { setGTotal(gTotal + cartItem.price * cartItem.qunt) }}
                       </tr>
