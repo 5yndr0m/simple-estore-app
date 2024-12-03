@@ -1,7 +1,9 @@
-import { useState } from "react";
 
 export default function Cart({ cartItems }) {
-    const [gTotal, setGTotal] = useState(0);
+  let grandTotal = 0;
+  for (let i = 0; i < cartItems.length; i++) {
+    grandTotal += cartItems[i].totalPrice;
+  }
     
     return (
         <div className="table-container">
@@ -26,13 +28,12 @@ export default function Cart({ cartItems }) {
                         <td>
                           {cartItem.totalPrice}
                         </td>
-                        {() => { setGTotal(gTotal + cartItem.price * cartItem.qunt) }}
                       </tr>
                     ))
                 }
                 <tr>
                     <td >Grand Total : </td>
-            <td colSpan={2}>{ gTotal }</td>
+            <td colSpan={2}>{ grandTotal }</td>
                 </tr>
             </table>
            
