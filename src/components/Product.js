@@ -1,18 +1,19 @@
 import '../assets/CSS/layout.css';
-export default function Product(){
+
+export default function Product({ flower}){
     
     return(
         <div className="grid-item">
 
-            <div class="card">
-                <img  />
-                <div class="card-body">
-                    <h5 class="card-title">Price:</h5>
-                    <div class="quantity-container">
-                        <label for="quantity">Quantity:</label>
+            <div className="card">
+              <img  src={require(`../assets/image/${flower.img}`)} alt={flower.name}/>
+                <div className="card-body">
+                    <h5 className="card-title">Price:</h5>
+                    <div className="quantity-container">
+                        <label htmlFor="quantity">Quantity:</label>
                         <input type="number" id="quantity" name="quantity" />
                     </div>
-                    <button class="card-button">Add to Cart</button>
+                    <button className="card-button">Add to Cart</button>
                 </div>
             </div>
         </div>
