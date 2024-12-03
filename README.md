@@ -1,4 +1,3 @@
-```markdown
 # 2020/ICT/19
 # IT3133(P) ICAE 01
 
@@ -16,26 +15,24 @@ A simple e-commerce web application for a flower shop built with React. Users ca
 
 ## Project Structure
 
-```
-flower-shop/
-│
-├── src/
-│   ├── assets/
-│   │   ├── CSS/
-│   │   │   └── layout.css
-│   │   └── image/
-│   │       └── [flower images]
-│   │
-│   ├── components/
-│   │   ├── Product.js
-│   │   ├── FlowerDB.js
-│   │   ├── Products.js
-│   │   └── Cart.js
-│   │
-│   └── App.js
-│
-└── README.md
-```
+flower-shop/<br/>
+│<br/>
+├── src/<br/>
+│   ├── assets/<br/>
+│   │   ├── CSS/<br/>
+│   │   │   └── layout.css<br/>
+│   │   └── image/<br/>
+│   │       └── [flower images]<br/>
+│   │<br/>
+│   ├── components/<br/>
+│   │   ├── Product.js<br/>
+│   │   ├── FlowerDB.js<br/>
+│   │   ├── Products.js<br/>
+│   │   └── Cart.js<br/>
+│   │<br/>
+│   └── App.js<br/>
+│<br/>
+└── README.md<br/>
 
 ## Installation
 
@@ -120,4 +117,3 @@ FlowerDB.js contains the flower data in the following format:
 **Figure 3:**
 ![screenshot04](./docs/screenShots/Figure04.png)
 **Figure 4:**
-```
